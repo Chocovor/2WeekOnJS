@@ -1,0 +1,8 @@
+main{
+    zoom: 350%;
+    margin: 10%; 
+    background-image: url(https://download.vikidia.org/vikidia/fr/images/7/7e/La_t%C3%AAte_%C3%A0_Toto.png);
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-position-x: center;
+    }

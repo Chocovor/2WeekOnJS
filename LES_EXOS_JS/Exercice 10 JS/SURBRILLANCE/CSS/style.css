@@ -1,0 +1,10 @@
+/*Preparer tout le generique au depart exemple hyperliens ou boutons*/
+/* Suppression des marges et des bords pour html*/
+*{
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding: 15px;
+}
+

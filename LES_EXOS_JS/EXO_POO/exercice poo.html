@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>/*
+   function Etudiant (age){
+        this.age = age;
+        alert("Etudiant instancié");
+        }
+    let etudiant1 = new Etudiant(25);
+    let etudiant2 = new Etudiant(20);
+    alert("etudiant1 a : " + etudiant1.age + "ans");*/
+    </script>
+    <script>
+        class Etudiant {
+            constructor(nom, age){
+            this.nom = nom;
+            this.age = age;
+            alert ("etudiant instancié : ")
+            }
+        }
+        let etudiant1 = new Etudiant("john", 18);
+        let etudiant2 = new Etudiant("michel", 25);
+        alert ("l'étudiant 1 a : "+etudiant1.age+"ans et s'appelle : "+etudiant1.nom);
+    </script>
+    <div></div>
+</body>
+</html>

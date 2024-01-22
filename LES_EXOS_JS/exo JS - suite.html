@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice JS - suite</title>
+</head>
+<body>
+    <!-- Exercice 7 LES TABLEAUX-->
+    <script> /*exercice Test Calendrier*/
+       /* let jours = ["lun","007","mer","jeu","ven","sam","BUG"];
+
+    Quelles instructions JavaScript faut-il exécuter pour effectuer 
+    les opérations suivantes ?
+
+    1. Retirer la dernière valeur du tableau jours			
+    jours.pop()
+
+    2. Afficher les valeurs du tableau dans la console 		
+    console.log(jours)
+
+    3. Ajouter la valeur 'dim' à la fin du tableau 			
+    jours.push("dim")
+
+    4. Remplacer la valeur '007' par 'mar' 				
+    jours[1] = "mar"
+
+    5. Afficher le nombre de valeurs du tableau dans la console 	
+    jours.length ;
+
+    6. Afficher la troisième valeur du tableau dans la console 	
+    jours[3] ;
+
+Quelle est la valeur finale du tableau, après avoir effectué toutes ces opérations ?
+La variable jours est de type object.
+Elle contient un tableau Array composé de 7 valeurs string*/
+    </script>
+    <script> /*exercire Epicerie
+    let fruits = ["Mangue","Raisin","Figue","Kiwi"];
+   function a (stock,sold){
+        return sold === stock[0] ? stock.splice(0,1) && alert("ok") : alert("0 Mangue"),
+            sold === stock[1] ? stock.splice(1,1) && alert("ok") : alert("0 Raisin"),
+            sold === stock[2] ? stock.splice(2,1) && alert("ok") : alert("0 Figue"),
+            sold === stock[3] ? stock.splice(3,1) && alert("ok") : alert("0 Kiwi"),
+            sold !== stock ? alert(sold + " Indisponible"): alert(+ sold + " Indisponible");      
+   }
+        alert ("Les fruis disponibles sont :" + fruits);
+        let sold= prompt( "Quels fruits désirez-vous ? Mangue, Raisin, Figue, Kiwi");
+        let achat = a(fruits,sold);
+        console.log(fruits);*/
+    </script> 
+    <script> /*exercice jeu du pendu
+    let mauvaisesLettres = [];
+    let lettresAttendues = ["s","u","p","e","r"];
+    let test;
+    function a (x,y){
+        return y === x[0] || x[1] || x[2] || x[3] || x[4] ? x.splice(y,1) && mauvaisesLettres.push(y) : mauvaisesLettres.push(y);
+    }
+    for(let i=0; i<=10; i++){
+        let jeu = a(lettresAttendues,test);
+        lettresAttendues.length === 0 ?  alert ("Bravo vous avez gagné !!!") :
+             test = prompt ("Ecrivez une lettre de l'alphabet en minuscule:");
+    console.log("Vous avez déjà essayé: " + mauvaisesLettres);
+    console.log("Les lettres non trouvées étaient: " + lettresAttendues);
+    }*/
+    </script>
+    <!--<script> /*Exercice 8 Annuaire*/
+        let annuair = {                        /*initialiser la variable contanant un objet*/
+            patricia: "06 66 66 66 66",         /*propriété 1*/
+            david: "07 77 77 77 77",            /*propriété 2*/
+        };
+        console.log(annuair.patricia);         /*affichage de la propriété une dans la console*/
+        let research = prompt ("Demandez le numéro de téléphone en écrivant le prénom de la personne recherchée");  /*demande à l'utilisateur de saisir sa recherche*/
+        if (research==="david"){                            /*conditions pour afficher les numméros corraspondant à la demande*/
+            alert("david : " + annuair.david);
+        }else if (research==="patricia"){
+            alert ("Patricia : " + annuair.patricia);
+        }else alert ("introuvable");
+    </script>-->
+
+    <script> /*Exercice 8 Répertoire téléphonique*/
+         let annuaire = {                        /*initialiser la variable contanant un objet*/
+            patricia: "06 66 66 66 66",         /*propriété 1*/
+            david: "07 77 77 77 77",            /*propriété 2*/
+        };
+       let y = ["r","l","a","s"];           /*création d'un tableau pour associer les éléments du tableau à des conditions*/
+       let f;
+       for (let i=0; f !== "q"; i++){       /*boucle for pour que l'utilisateur uisse saisir autant de commande souhaitée*/
+            f = prompt("Que voulez vous faire ? Tapez: \nr pour rechercher, \nl pour afficher la liste, \na pour ajouter, \ns pour supprimer et q pour quitter");
+            if (f===y[0]){
+                let r = prompt("Qui cherchez vous ?"); /*chercher un contact dans le répertoire*/
+                r==="patricia" || "david" ? alert(r + ": " + annuaire[r]) : alert("erreur"); 
+            }else if(f===y[1]) { /*afficher les éléments du répertoire 1 à 1 */
+                for (let cle in annuaire){
+                    alert(cle+": "+annuaire[cle]);
+                    }
+            }else if(f===y[2]){ /*ajouter un contact dans le repertoire*/
+                let a = prompt("Ecrivez le nom du nouveau contacte en minuscule");
+                annuaire [a] = prompt("Entrer son numéro de téléphone");                
+            }else if(f===y[3]){ /*supprimer un contact du répertoire*/
+                let s = prompt("Ecrivez le nom du contacte que vous voulez supprimer")
+                delete annuaire [s];
+            }
+            console.log(annuaire); /*afficher le répertoire dans la console au fur et à mesure des commandes exécutées*/
+        }
+    </script>
+    <script> /*Exercice 9 sur le Dom*/
+
+    </script>
+</body>
+</html>
